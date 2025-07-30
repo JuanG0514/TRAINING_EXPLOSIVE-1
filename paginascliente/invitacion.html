@@ -1,0 +1,192 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <title>TRAINING_EXPLOSIVE</title>
+            <link rel="icon" href="../imagenes/logo.jpeg" type="image/jpg">
+    </head>
+    <style>
+       html {
+  scroll-behavior: smooth;
+}
+body {
+ margin: 0;
+ padding: 0;
+ background-size: cover;
+ background-position: center;
+ background-color: white;
+ text-align: center;
+ background-image: url(../imagenes/fondoinv.jpeg);
+}
+/*BARRA*/
+.contenedor-header .logo{
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+.contenedor-header {
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid red;
+  background-color:red;
+  z-index: 99;
+  padding: 0 20px;
+
+}
+.contenedor-header header {
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content:space-around;
+align-items: center;
+padding: 17px 0;
+color: white;
+}
+h1 {
+  font-family: serif;
+  color: white;
+  text-shadow:2px 2px 4px black;
+}
+.contenedor-header header nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.contenedor-header header nav a:hover {
+  color: black;
+}
+.contenedor-header header .redes a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 5px 8px;
+  font-size: 25px;
+}
+.contenedor-header header .redes a:hover {
+  color: black;
+}
+.nav-responsive{
+  font-size: 25px;
+}       
+/** CSS BODY**/
+.video-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ padding: auto;
+}
+h2 {
+  color: #000000;
+    font-size: 1.8rem;
+}
+#buttons-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 3px solid #000000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ff0000;
+}
+@media (max-width: 768px) {
+  .contenedor-header header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-header header h1 {
+    font-size: 25px;
+  }
+  .contenedor-header header nav a {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .contenedor-header header .redes a {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 25px;
+    margin-top: 200px;
+  }
+  .video-container video {
+    width: 95%;
+    height: auto;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+  body {
+    background-image: url(../imagenes/fondovertical.jpeg);
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-header header .redes a {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  button {
+    font-size: 14px;
+  }
+  body {
+    background-image: url(../imagenes/fondovertical.jpeg);
+  }
+}
+
+    </style>
+    <!--BARRA HTML-->
+    <body>
+      <div class="contenedor-header">
+        <header>
+          <img src="../imagenes/logo.jpeg" alt="Logo" class="logo">
+          <h1>TRAINING_EXPLOSIVE</h1>
+          <nav id="nav">
+            <a href="inicio.html">Inicio</a>
+            </nav>
+       <div class="redes">
+        <a href="https://www.facebook.com/steven.gutierrezrodriguez.7?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/573217734709"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/team_training_explosive?igsh=MWtoeGU2Y2NlM2xuaA=="><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+      </header> 
+          <!--BODY HTML-->
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+<h2>Bienvenido/a a TRAINING_EXPLOSIVE <br> ¡Anímate a iniciar tu proceso!</h2>
+    <div class="video-container">
+        <video width="1000" height="300" controls>
+        <source src="../imagenes/videoinv.mp4" type="video/mp4">
+        </video>
+        <br>
+        <div class="buttons">
+            <button onclick="location.href='registro.php'">Registrarse</button><br><br>
+            <button onclick="location.href='../login/usuario.html'">¡A entrenar!</button> 
+        </div>
+    </div>
+</body>
+</html>
